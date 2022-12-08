@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Java_Script Fourth Handson</h1>
+    <h2>
+      1.Write a program that takes an array as input from the user and find out
+      the product of the elements.
+    </h2>
+    <pre style="font-size: 20px;color:blue">
+const Find_Prod = (array, N) => 
+{
+ let pro=1;
+ for(let i=0;i&ltarray.length;i++){
+   pro=pro*array[i];
+ }
+ return pro;
+};</pre
+    >
+    <h2>
+      2.Write a program which takes an array as input from the user and find out
+      the sum of the array elements.
+    </h2>
+    <pre  style="font-size: 20px;color:blue">
+const Find_Sum = (array, N) => 
+{
+  let sum=0;
+  let i=0;
+  while(i&ltarray.length){
+    sum=sum+array[i];
+    i++;
+  }
+ 
+return sum;
+};</pre
+    >
+    <h2>
+      3.You are given an array A containing N integer elements and an integer K
+      , and your task is to return the count of occurrences of K in array A .
+    </h2>
+    <pre  style="font-size: 20px;color:blue">
+const findCount = (N, K, Arr) => 
+{
+  var count=0;
+  for(let i=0;i&lt=N;i++){
+    if(Arr[i]===K)
+    count++;
+  }
+    return count;
+};</pre
+    >
+    <h2>
+      4.You are given an array A containing N integer elements, and your task is
+      to return an array B ( having a size equal to 2 ) , where B [ 0 ] contains
+      the sum of all even elements of array A and B [ 1 ] has the sum of all odd
+      elements of the array A .
+    </h2>
+    <pre  style="font-size: 20px;color:blue">
+const findEvenOdd = (N, Arr) => 
+{
+  let evencount=0,oddcount=0;
+  let arr2=[];
+  for(let i=0;i&ltN;i++){
+    
+    if(Arr[i]%2===0){
+      evencount=evencount+Arr[i];
+    }
+    else{
+      oddcount=oddcount+Arr[i];
+    }
+  }
+  arr2[0]=evencount;
+  arr2[1]=oddcount;
+  return(arr2);
+    
+};</pre
+    >
+    <h2>5.Write a program which takes an array as input from the user and a number.
+Check whether the number is present or not.</h2>
+<pre  style="font-size: 20px;color:blue">const Find_Num = (array,N,M) => 
+{
+  let isPresent=false;
+  for(let i=0;i&ltN;i++){
+    if(array[i]===M){
+    isPresent=true;
+    break;
+    }
+    
+  }
+  if(isPresent) return "YES" ;
+  else return "NO";
+  
+};</pre>
+<h2>6.You are given an array A containing the age of persons in your locality, and your task is to find and return an array containing the age of persons that are over 
+18(18 included).</h2>
+<pre  style="font-size: 20px;color:blue">const highAge = (N, Arr) => 
+{
+    
+    let arr2=[];
+    let j=0;
+    for(let i=0;i&ltN;i++){
+      if(Arr[i]>=18){
+      arr2[j]=Arr[i];
+      j++;
+      }
+    }
+    return arr2 ;
+};</pre>
+<h2>7.You are provided an array of integers and you have to increment all array elements by 1 and then print whole array</h2>
+<pre  style="font-size: 20px;color:blue">
+const Inc_Arr = (array,N) => 
+{
+  let arr2=[];
+  for(let i=0;i&ltN;i++){
+    arr2=array[i]+1;
+    console.log(arr2);
+  }
+
+};
+ 
+</pre>
+<h2>8.You are given an array A containing the maths marks of students in your class, and your task is to determine if all the students pass in your class or not. A student is declared pass if his maths marks are greater than or equal to 
+32.</h2>
+<pre  style="font-size: 20px;color:blue">
+const isAllPass = (N, Arr) => 
+{
+  let isPass=true;
+    for(let i=0;i&ltN;i++){
+      if(Arr[i]&lt32){
+        isPass=false;
+        break;
+      }
+    }
+    if(isPass) return "YES";
+    else return "NO";
+};
+ 
+</pre>
+<h2>9.The problem statement is simple- given N elements, find the minimum and maximum numbers among those elements.</h2>
+<pre  style="font-size: 20px;color:blue"> 
+ function arrayMin(arr) {
+return arr.reduce(function(p,v){
+return (p < v ? p : v);
+  
+});
+}
+function arrayMax(arr) {
+return arr.reduce(function (p, v) {
+    return ( p > v ? p : v );
+  });
+
+}
+
+</pre>
+  </body>
+</html>
